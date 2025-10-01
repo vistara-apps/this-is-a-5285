@@ -64,8 +64,6 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `🚀 **Preview Deployment Ready!**
-              \n\n📱 **URL:** ${deploymentUrl}
-              \n\nThis preview will be automatically updated when you push new commits to this PR.`
+              body: `🚀 **Preview Deployment Ready!**\n\n📱 [View Deployment](${deploymentUrl})`
             });
           }
